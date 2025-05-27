@@ -1,0 +1,67 @@
+add_newline = true
+command_timeout = 2000
+
+format = """$env_var$os$username$hostname$kubernetes$directory$git_branch$git_status$python
+$character
+"""
+
+[character]
+success_symbol = "[╰⎯](#a78bfa)"
+error_symbol = "[╰⎯](#a78bfa)"
+
+[env_var]
+symbol = "[╭╴](#a78bfa)"
+variable = 'SHELL'
+format = "$symbol"
+disabled = false
+
+[os]
+format = '[$symbol](#a78bfa bold) '
+disabled = false
+
+[os.symbols]
+Windows = ' '
+Arch = '󰣇'
+Ubuntu = ''
+Macos = '󰀵'
+Unknown = '󰠥'
+
+[username]
+style_user = 'bold'
+style_root = 'bold'
+format = '[//](#a78bfa) [$user](#8e59c5) '
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '[//](#a78bfa) [$hostname](#e879f9 bold) '
+disabled = false
+
+[directory]
+truncation_length = 0
+truncation_symbol = '…/'
+home_symbol = '~'
+read_only = '  '
+format = '[//](#a78bfa) [$path](#f472b6 bold)[$read_only](#f472b6) '
+style = '#f472b6'
+
+[git_branch]
+symbol = ' '
+format = '[//](#a78bfa) [$symbol\[$branch\]](#e879f9 bold) '
+style = '#e879f9 bold'
+
+[git_status]
+disabled = true
+format = '[ $all_status $ahead_behind](#f472b6) '
+style = '#f472b6'
+
+[kubernetes]
+format = 'via [󱃾 $context\($namespace\)](#c084fc bold) '
+disabled = false
+
+[python]
+symbol = '󰌠'
+python_binary = ['./venv/bin/python', 'python', 'python3', 'python2']
+format = '[//](#a78bfa) [$symbol $pyenv_prefix($version )($virtualenv )](#e879f9 bold) '
+

@@ -13,3 +13,7 @@ Before using these configs, install:
 
 - [Starship](https://starship.rs/install/)
 - [eza](https://github.com/eza-community/eza)
+
+## Preview
+!fedora](Fedora.png)
+![ubuntu](ubuntu.png)

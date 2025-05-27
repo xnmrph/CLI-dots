@@ -15,5 +15,5 @@ Before using these configs, install:
 - [eza](https://github.com/eza-community/eza)
 
 ## Preview
-!fedora](Fedora.png)
+![fedora](Fedora.png)
 ![ubuntu](ubuntu.png)

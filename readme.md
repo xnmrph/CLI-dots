@@ -1,6 +1,6 @@
 ![Banner](preview.png) <!-- top image -->
 
-# 🌟 My Dotfiles
+# 🌟 Nothing special or great, just uniform and clean (enough) for all my devices
 
 Minimal, personal dotfiles for a clean and fast terminal setup. Currently includes:
 

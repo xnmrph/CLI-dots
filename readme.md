@@ -1,3 +1,5 @@
+![Banner](preview.png) <!-- top image -->
+
 # 🌟 My Dotfiles
 
 Minimal, personal dotfiles for a clean and fast terminal setup. Currently includes:
